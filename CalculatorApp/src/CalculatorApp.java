@@ -20,10 +20,11 @@ public class CalculatorApp {
 		// grab inputs and store in variables
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter first integer:     ");
+		System.out.print("Enter first integer:     ");
 		a = sc.nextInt();
-		System.out.println("Enter second integer:     ");
+		System.out.print("Enter second integer:     ");
 		b = sc.nextInt();
+		sc.close();
 
 		// perform operations (math)
 
@@ -47,6 +48,7 @@ public class CalculatorApp {
 
 		// bye
 		System.out.println("Thanks for using the best calculator in the world!");
+		
 	}
 
 }
