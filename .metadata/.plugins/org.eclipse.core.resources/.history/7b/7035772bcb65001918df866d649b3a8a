@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class CalculatorApp {
 
 	public static void main(String[] args) {
-
+		
 		// welcome
 
 		System.out.println("Welcome to the amazing calculator v1");
@@ -36,15 +36,13 @@ public class CalculatorApp {
 
 		System.out.print("The sum is ");
 		System.out.println(sum);
-		// I SHOULD HAVE DONE: System.out.println('The sum is "+sum); 
 		System.out.print("The difference is ");
 		System.out.println(diff);
 		System.out.print("The product is ");
 		System.out.println(product);
 		System.out.print("The quotient is ");
 		System.out.println(quotient);
-	
-
+		
 		// bye
 		System.out.println("Thanks for using the best calculator in the world!");
 	}

@@ -36,7 +36,7 @@ public class CalculatorApp {
 
 		System.out.print("The sum is ");
 		System.out.println(sum);
-		// I SHOULD HAVE DONE: System.out.println('The sum is "+sum); 
+		// I SHOULD HAVE DONE: System.out.println('The sum is "+sum);
 		System.out.print("The difference is ");
 		System.out.println(diff);
 		System.out.print("The product is ");
