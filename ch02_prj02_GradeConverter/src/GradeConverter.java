@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class GradeConverter {
 
-	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		
 		// Welcome
@@ -39,8 +38,10 @@ public class GradeConverter {
 			System.out.println();
 			System.out.print("Continue? (y/n):  ");
 			choice = sc.next();
+			System.out.println();
 		}
 		sc.close();
+		System.out.println("Bye!");
 
 
 	}

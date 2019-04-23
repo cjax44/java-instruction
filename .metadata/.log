@@ -523,3 +523,6 @@ java.nio.file.FileSystemException: C:\repos\java-instruction\GradeConverter: The
 	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
 	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.jdt.launching 4 107 2019-04-23 14:47:12.514
+!MESSAGE Launch configuration GradeConverter references non-existing project GradeConverter.
