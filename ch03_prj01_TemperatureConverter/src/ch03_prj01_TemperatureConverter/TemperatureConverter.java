@@ -6,21 +6,21 @@ import java.math.RoundingMode;
 public class TemperatureConverter {
 
 	public static void main(String[] args) {
-		
+
 		// welcome
-		
+
 		System.out.println("Welcome to the amazing Temperature Converter!");
 		System.out.println();
-		
+
 		// initialize variables and Scanner
-		
+
 		Scanner sc = new Scanner(System.in);
 		String choice = "y";
-		
+
 		// prompt
-		
+
 		while (choice.equalsIgnoreCase("y")) {
-			
+
 			System.out.print("Enter F Degrees: ");
 			double degreeF = sc.nextDouble();
 			System.out.println();
@@ -30,14 +30,13 @@ public class TemperatureConverter {
 			System.out.println("Continue? (y/n)");
 			choice = sc.next();
 			System.out.println();
-			
-		
-			}
-		
+
+		}
+
 		// logic
-		
+
 		// display results
-		
+
 		// bye
 
 	}
