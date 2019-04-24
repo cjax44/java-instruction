@@ -1,0 +1,66 @@
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.Scanner;
+
+public class InterestCalculatorApp {
+
+	public static void main(String[] args) {
+		// Welcome
+		
+		System.out.println("Welcome to the Interest Calculator App");
+		
+		// Declare Variables and Initialize Scanner
+		
+		Scanner sc = new Scanner(System.in);
+		String choice = "y";
+		
+		// Prompt for input
+		
+		while (choice.equalsIgnoreCase("y")) {
+			System.out.println("Enter loan amount: ");
+			// double loanAmt = sc.nextDouble(); OLD ATTEMPT
+			String loanAmtStr = sc.next();
+			BigDecimal loanAmt = new BigDecimal(loanAmtStr);
+			loanAmt = loanAmt.setScale(2, RoundingMode.HALF_UP);
+			
+			System.out.println("Enter interest rate: ");
+			// double intRate = sc.nextDouble(); OLD ATTEMPT
+			String intRateStr = sc.next();
+			BigDecimal intRate = new BigDecimal(intRateStr).setScale(2, RoundingMode.HALF_UP);
+			
+			
+		// Logic
+			
+			BigDecimal intAmt = loanAmt.multiply(intRate);
+			
+			
+		// Display Results	
+			System.out.println("Loan Amount:      " + loanAmt);
+			System.out.println("Interest rate:     " + intRate);
+			System.out.println("Interest:      " + intAmt);
+			
+			
+			
+			
+			
+			System.out.println();
+			System.out.println("Continue? (y/n)");
+			choice = sc.next();
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		// Bye
+		
+		System.out.println();
+		System.out.println("Bye");
+		
+
+	}
+
+}
