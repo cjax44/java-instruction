@@ -107,6 +107,7 @@
 		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
 			<item value="C:\Users\MaxTech\Desktop\Book Files - Java\eclipse\book_apps"/>
+			<item value="C:\Users\MaxTech\Desktop\Book Files - Java\eclipse\ex_starts"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
