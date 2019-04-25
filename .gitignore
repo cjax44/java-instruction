@@ -2,6 +2,7 @@
 bin/
 tmp/
 Servers/
+sandbox/
 *.tmp
 *.bak
 *.swp
