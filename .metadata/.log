@@ -684,3 +684,371 @@ org.eclipse.jface.text.BadLocationException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.ui 4 0 2019-04-25 14:47:20.422
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.ui 4 0 2019-04-25 14:47:20.428
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.ui 4 0 2019-04-25 14:47:20.432
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.ui 4 0 2019-04-25 14:47:20.437
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4699)
+	at org.eclipse.swt.SWT.error(SWT.java:4614)
+	at org.eclipse.swt.SWT.error(SWT.java:4585)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:451)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:350)
+	at org.eclipse.swt.widgets.Composite.getChildren(Composite.java:469)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceDropAdapter.lambda$0(MarketplaceDropAdapter.java:136)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3919)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3550)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+
+!ENTRY org.eclipse.jdt.debug 2 0 2019-04-25 16:19:23.766
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2019-04-25 16:23:38.148
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+!SESSION 2019-04-26 09:08:19.449 -----------------------------------------------
+eclipse.buildId=3.9.8.201903260800-RELEASE-e411
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.egit.core 1 0 2019-04-26 09:10:10.687
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-04-26 09:10:11.766
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-04-26 09:10:11.766
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@62cb977a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7db70494,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.jface.text 2 0 2019-04-26 09:10:17.978
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-04-26 09:10:30.422
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\MaxTech'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface.text 2 0 2019-04-26 09:26:32.905
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:13.106
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:30.899
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:30.909
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:30.922
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:30.931
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:30.941
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:30.949
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:30.954
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:30.974
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:30.980
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:30.986
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:30.992
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:30.998
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:31.003
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 150 2019-04-26 09:35:31.013
+!MESSAGE Unable to locate executable for jre1.8.0_201
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:53.701
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:53.707
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:53.712
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:53.718
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:53.723
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:53.729
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:53.734
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:53.743
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:53.748
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:53.753
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:53.759
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:53.765
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:35:53.770
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 150 2019-04-26 09:35:53.776
+!MESSAGE Unable to locate executable for jre1.8.0_201
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:36:31.424
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:36:31.431
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:36:31.439
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:36:31.447
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:36:31.451
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:36:31.456
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:36:31.461
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:36:31.468
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:36:31.473
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:36:31.478
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:36:31.483
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:36:31.487
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 4 2019-04-26 09:36:31.492
+!MESSAGE Could not determine Java version for location C:\Program Files\Java\jre1.8.0_201.
+
+!ENTRY org.eclipse.jdt.launching 4 150 2019-04-26 09:36:31.497
+!MESSAGE Unable to locate executable for jre1.8.0_201
+!SESSION 2019-04-26 09:36:45.048 -----------------------------------------------
+eclipse.buildId=3.9.8.201903260800-RELEASE-e411
+java.version=1.8.0_211
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.egit.core 1 0 2019-04-26 09:38:09.740
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-04-26 09:38:10.812
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-04-26 09:38:10.812
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3c981f76,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4844e24b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.jface.text 2 0 2019-04-26 09:38:16.556
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-04-26 09:38:29.514
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\MaxTech'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

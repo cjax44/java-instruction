@@ -9,7 +9,7 @@ public class SpongeBobText {
 			if (x == 0) {
 				x = (int)(Math.random()*2.75);
 			} else {
-				x = (int)(Math.random()*1.25);
+				x = (int)(Math.random()*1.25);  
 			}
 			
 			if (x == 0) {
