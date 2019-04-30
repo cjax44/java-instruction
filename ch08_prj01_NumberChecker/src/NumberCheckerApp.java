@@ -29,7 +29,7 @@ public class NumberCheckerApp {
 			System.out.println("Continue (y/n)?");
 			choice = sc.next();
 		}
-
+		sc.close();
 	}
 
 }
