@@ -5,7 +5,7 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2019-04-29T16:40:03Z</updated>
+  <updated>2019-04-29T16:40:00Z</updated>
   <entry>
     <title>Spring Cloud Open Service Broker 3.0.0 Released</title>
     <link rel="alternate" href="https://spring.io/blog/2019/04/29/spring-cloud-open-service-broker-3-0-0-released" />
@@ -14,8 +14,8 @@
       <name>Roy Clarkson</name>
     </author>
     <id>tag:spring.io,2019-04-29:3660</id>
-    <updated>2019-04-29T16:40:03Z</updated>
-    <content type="html">&lt;p&gt;We are please to announce the general availability of Spring Cloud Open Service Broker 3.0.0. This release introduces a significant shift from imperative to reactive APIs in order to support the new reactive-based web framework, Spring WebFlux. v3.0.0 was developed in parallel with v2.1.x and has feature parity with &lt;a href="https://spring.io/blog/2019/04/29/spring-cloud-open-service-broker-2-1-2-released"&gt;v2.1.2&lt;/a&gt;. Looking forward, all new features will only be added to the 3.x releases.&lt;/p&gt;
+    <updated>2019-04-29T16:40:00Z</updated>
+    <content type="html">&lt;p&gt;We are pleased to announce the general availability of Spring Cloud Open Service Broker 3.0.0. This release introduces a significant shift from imperative to reactive APIs in order to support the new reactive-based web framework, Spring WebFlux. v3.0.0 was developed in parallel with v2.1.x and has feature parity with &lt;a href="https://spring.io/blog/2019/04/29/spring-cloud-open-service-broker-2-1-2-released"&gt;v2.1.2&lt;/a&gt;. Looking forward, all new features will only be added to the 3.x releases.&lt;/p&gt;
 &lt;p&gt;New features available in v3.0.0:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Continue support for &lt;a href="https://www.openservicebrokerapi.org/blog/2018/08/21/open-service-broker-v2-14-released"&gt;Open Service Broker API v2.14&lt;/a&gt;.&lt;/li&gt;
@@ -42,8 +42,8 @@
       <name>Roy Clarkson</name>
     </author>
     <id>tag:spring.io,2019-04-29:3659</id>
-    <updated>2019-04-29T16:35:45Z</updated>
-    <content type="html">&lt;p&gt;We are please to announce the release of Spring Cloud Open Service Broker 2.1.2. We want to thank Guillaume Berche for his significant contributions to this release and to the project overall. This is a maintenance release that incorporates several updates and improvements, including the following:&lt;/p&gt;
+    <updated>2019-04-29T16:35:00Z</updated>
+    <content type="html">&lt;p&gt;We are pleased to announce the release of Spring Cloud Open Service Broker 2.1.2. We want to thank Guillaume Berche for his significant contributions to this release and to the project overall. This is a maintenance release that incorporates several updates and improvements, including the following:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Continued support for &lt;a href="https://www.openservicebrokerapi.org/blog/2018/08/21/open-service-broker-v2-14-released"&gt;Open Service Broker API v2.14&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;Upgrade to Spring Boot 2.0.9.RELEASE and Spring Framework 5.0.13.RELEASE&lt;/li&gt;
