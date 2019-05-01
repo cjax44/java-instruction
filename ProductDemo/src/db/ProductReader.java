@@ -1,3 +1,6 @@
+package db;
+
+import business.Product;
 
 public interface ProductReader {
 	

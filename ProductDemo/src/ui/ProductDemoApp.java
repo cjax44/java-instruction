@@ -1,3 +1,6 @@
+package ui;
+
+import business.Book;
 
 public class ProductDemoApp {
 
