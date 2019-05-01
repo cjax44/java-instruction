@@ -1,6 +1,8 @@
 package business;
 
-public class Sheep extends Animal implements Cloneable {
+import util.Countable;
+
+public class Sheep extends Animal implements Cloneable, Countable {
 	
 	String name = "Blackie";
 
