@@ -50,6 +50,7 @@ public class Console {
                 System.out.println("Error! This entry is required. Try again.");
             } else if (s.equals("x")) {
             	System.out.println("Thanks for checking out the app!");
+            	break;
             } else {
             
                 isValid = true;

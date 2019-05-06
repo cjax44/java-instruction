@@ -39,7 +39,6 @@ public class Game {
 		} else if (firstLetterLastName.equalsIgnoreCase(firstLetterFirstName)) {
 			
 			System.out.println("That is an acceptable name!");
-			System.out.println("Player + scored a point!\n\n");
 						
 		} else if (firstName1.equalsIgnoreCase("pass")) {
 			
@@ -53,6 +52,7 @@ public class Game {
 		
 		else {
 			System.out.println("The name does not match up!\nNo points awarded...");
+			
 		}
 		
 	}

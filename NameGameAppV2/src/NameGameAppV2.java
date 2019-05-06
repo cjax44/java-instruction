@@ -34,7 +34,7 @@ public class NameGameAppV2 {
 					//begin looping to check entry2 vs entry1 - then replace entry1 var 
 					//with entry 2 value to make loop continue to apply
 					while (continueChoice.equalsIgnoreCase("y")) {
-					for (currentPlayer = 0; currentPlayer < numPlayers; currentPlayer++) {
+					for (currentPlayer = 1; currentPlayer < numPlayers; currentPlayer++) {
 						int score = 0;
 						String nameEntry2 = Console.getRequiredString("Next player please enter a first and last name: ");
 						System.out.println("\nThe name chosen was " + nameEntry2 + "\n");
@@ -45,6 +45,10 @@ public class NameGameAppV2 {
 						Game.compareNames(playerArr, numPlayers, brokenOut1[0], brokenOut1[1], brokenOut2[0], brokenOut2[1]);
 						// add score to current player
 						playerArr[currentPlayer].setPlayerScore(score + 1);
+						System.out.println("Player " + (currentPlayer + 1)
+								+ " score total is now " 
+								+ playerArr[currentPlayer].getPlayerScore()
+								+ " point(s)");
 						//put newest name as nameEntry1 variable so next loop through uses that to compare
 						nameEntry1 = nameEntry2;
 						if (currentPlayer == (numPlayers-1)) {
@@ -69,7 +73,8 @@ public class NameGameAppV2 {
 			public static void printStats(Player[] playerArr, int numPlayers) {
 				
 				for (int playerNum = 0; playerNum < numPlayers; playerNum++) {
-					System.out.println(playerArr[playerNum].getPlayerScore());
+					System.out.println("Player " + (playerNum + 1) + "'s total score is " 
+							+ playerArr[playerNum].getPlayerScore() + " points");
 				}
 				
 			}
