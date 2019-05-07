@@ -5,7 +5,30 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2019-05-07T04:41:49Z</updated>
+  <updated>2019-05-07T15:05:57Z</updated>
+  <entry>
+    <title>This Week in Spring - May 7th, 2019</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/05/07/this-week-in-spring-may-7th-2019" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2019-05-07:3666</id>
+    <updated>2019-05-07T15:05:57Z</updated>
+    <content type="html">&lt;p&gt;Hi Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! This week I&amp;rsquo;ve been in beautiful Sao Paolo, Brazil for QCon Sao Paolo then it&amp;rsquo;s off to Devoxx UK in London. As usual, lots of good stuff to get to so let&amp;rsquo;s get to it.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/05/07/spring-boot-for-apache-geode-pivotal-gemfire-1-0-0-release-available"&gt;Spring Boot for Apache Geode &amp;amp; Pivotal GemFire 1.0.0.RELEASE Available!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/05/03/a-bootiful-podcast-spring-cloud-engineer-olga-maciaszek-sharma"&gt;A Bootiful Podcast: Spring Cloud Engineer Olga Maciaszek-Sharma&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/05/01/spring-boot-for-apache-geode-pivotal-gemfire-1-0-0-rc2-released"&gt;Spring Boot for Apache Geode &amp;amp; Pivotal GemFire 1.0.0.RC2 Released!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Interesting thread on Reddit.com: &lt;a href="https://www.reddit.com/r/java/comments/bkjnoi/docker_and_spring_boot_done_properly/"&gt;Docker and Spring Boot done properly? &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.infoq.com/news/2019/05/spring-cloud-pluggable-circuit"&gt;Spring Cloud Introduces Pluggable Circuit-Breaker Interface&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://itnext.io/microservices-with-spring-boot-and-spring-cloud-441e3dabc67d"&gt;Microservices with Spring Boot and Spring Cloud.&lt;/a&gt; This is part 3 of a series, titled &amp;ldquo;From config server to OAuth2 server (without in-Memory things)&amp;rdquo;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://billykorando.com/2019/05/06/jpa-or-sql-in-a-spring-boot-application-why-not-both/"&gt;JPA or SQL in a Spring Boot Application? Why Not Both? &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;DZone have my Spring Tips installment on WebMvc.fn up and &lt;a href="https://dzone.com/articles/spring-tips-webmvcfn-the-functional-dsl-for-spring"&gt;it was a good reminder that people might like to see this&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This is kind of interesting - it looks &lt;a href="https://stackabuse.com/spring-cloud-hystrix/"&gt;at the Spring Cloud Hystrix integration&lt;/a&gt;. If I were building new software today &lt;a href="https://spring.io/blog/2019/04/24/spring-tips-spring-cloud-circuit-breaker"&gt;I&amp;rsquo;d start with the Spring Cloud Circuit Breaker abstraction, though&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Baeldung have updated their epic post &lt;a href="https://www.baeldung.com/spring-cloud-data-flow-spark"&gt;on using Spring Cloud Data Flow with Apache Spark&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
   <entry>
     <title>Spring Boot for Apache Geode &amp; Pivotal GemFire 1.0.0.RELEASE Available!</title>
     <link rel="alternate" href="https://spring.io/blog/2019/05/07/spring-boot-for-apache-geode-pivotal-gemfire-1-0-0-release-available" />
@@ -1068,118 +1091,5 @@ public Customizer&amp;lt;Resilience4JCircuitBreakerFactory&amp;gt; slowCustomize
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;&lt;a href="#feedback" class="anchor" name="feedback"&gt;&lt;/a&gt;Feedback&lt;/h1&gt;
 &lt;p&gt;We look forward to hearing what you think about this new project. Check out the &lt;a href="https://github.com/spring-cloud-incubator/spring-cloud-circuitbreaker"&gt;GitHub project&lt;/a&gt; as well as the &lt;a href="https://spring-cloud-incubator.github.io/spring-cloud-circuitbreaker/spring-cloud-circuitbreaker.html"&gt;documentation&lt;/a&gt; for more information. As always, you can reach out to us on &lt;a href="https://stackoverflow.com/questions/tagged/spring-cloud"&gt;Stack Overflow&lt;/a&gt; and &lt;a href="https://gitter.im/spring-cloud/spring-cloud"&gt;Gitter&lt;/a&gt; or by creating a &lt;a href="https://github.com/spring-cloud-incubator/spring-cloud-circuitbreaker/issues"&gt;GitHub issue&lt;/a&gt;.&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Security 5.2.0.M2 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2019/04/16/spring-security-5-2-0-m2-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Josh Cummings</name>
-    </author>
-    <id>tag:spring.io,2019-04-15:3644</id>
-    <updated>2019-04-16T15:25:35Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;On behalf of the community, I’m pleased to announce the release of
-Spring Security 5.2.0.M2! This release includes
-&lt;a href="https://github.com/spring-projects/spring-security/milestone/132?closed=1"&gt;100+
-updates&lt;/a&gt;. You can find the highlights below:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="oauth-2-0"&gt;&lt;a class="anchor" href="#oauth-2-0"&gt;&lt;/a&gt;OAuth 2.0&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="a-href-https-github-com-spring-projects-spring-security-issues-6446-gh-6446-a-client-support-for-pkce"&gt;&lt;a class="anchor" href="#a-href-https-github-com-spring-projects-spring-security-issues-6446-gh-6446-a-client-support-for-pkce"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/6446"&gt;gh-6446&lt;/a&gt; - Client Support for PKCE&lt;/h5&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://tools.ietf.org/html/rfc7636"&gt;PKCE&lt;/a&gt; isn&amp;#8217;t just for &lt;a href="https://tools.ietf.org/html/rfc8252"&gt;native&lt;/a&gt; or &lt;a href="https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-01"&gt;browser-based apps&lt;/a&gt;, but for any time we want to have a public client. Spring Security 5.2 introduces a secure way for backends to authenticate as public clients.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="a-href-https-github-com-spring-projects-spring-security-issues-5350-gh-5350-a-openid-connect-rp-initiated-logout"&gt;&lt;a class="anchor" href="#a-href-https-github-com-spring-projects-spring-security-issues-5350-gh-5350-a-openid-connect-rp-initiated-logout"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/5350"&gt;gh-5350&lt;/a&gt; - OpenID Connect RP-Initiated Logout&lt;/h5&gt;
-
-&lt;/div&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="a-href-https-github-com-spring-projects-spring-security-issues-5465-gh-5465-a-ability-to-use-symmetric-keys-with-code-jwtdecoder-code"&gt;&lt;a class="anchor" href="#a-href-https-github-com-spring-projects-spring-security-issues-5465-gh-5465-a-ability-to-use-symmetric-keys-with-code-jwtdecoder-code"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/5465"&gt;gh-5465&lt;/a&gt; - Ability to use symmetric keys with &lt;code&gt;JwtDecoder&lt;/code&gt;&lt;/h5&gt;
-
-&lt;/div&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="a-href-https-github-com-spring-projects-spring-security-issues-5937-gh-5397-a-ability-for-code-nimbusreactivejwtdecoder-code-to-take-a-custom-processor"&gt;&lt;a class="anchor" href="#a-href-https-github-com-spring-projects-spring-security-issues-5937-gh-5397-a-ability-for-code-nimbusreactivejwtdecoder-code-to-take-a-custom-processor"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/5937"&gt;gh-5397&lt;/a&gt; - Ability for &lt;code&gt;NimbusReactiveJwtDecoder&lt;/code&gt; to take a custom processor&lt;/h5&gt;
-
-&lt;/div&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="a-href-https-github-com-spring-projects-spring-security-issues-6513-gh-6513-a-a-href-https-github-com-spring-projects-spring-security-issues-5200-gh-5200-a-support-for-resource-server-token-introspection"&gt;&lt;a class="anchor" href="#a-href-https-github-com-spring-projects-spring-security-issues-6513-gh-6513-a-a-href-https-github-com-spring-projects-spring-security-issues-5200-gh-5200-a-support-for-resource-server-token-introspection"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/6513"&gt;gh-6513&lt;/a&gt; &amp;amp; &lt;a href="https://github.com/spring-projects/spring-security/issues/5200"&gt;gh-5200&lt;/a&gt; - Support for Resource Server Token Introspection&lt;/h5&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Resource Server now supports a second OAuth 2.0 token verification strategy: &lt;a href="https://github.com/spring-projects/spring-security/tree/master/samples/boot/oauth2resourceserver-opaque"&gt;Token Introspection&lt;/a&gt;. This is handy when a Resource Server wants to or must verify the token remotely.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="a-href-https-github-com-spring-projects-spring-security-issues-5351-gh-5351-a-support-for-resource-server-multi-tenancy-servlet-only"&gt;&lt;a class="anchor" href="#a-href-https-github-com-spring-projects-spring-security-issues-5351-gh-5351-a-support-for-resource-server-multi-tenancy-servlet-only"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/5351"&gt;gh-5351&lt;/a&gt; - Support for Resource Server Multi-tenancy (Servlet only)&lt;/h5&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;With the introduction of &lt;code&gt;AuthenticationManagerResolver&lt;/code&gt;, initial support for &lt;a href="https://github.com/spring-projects/spring-security/tree/master/samples/boot/oauth2resourceserver-multitenancy"&gt;multi-tenant Resource Servers&lt;/a&gt; has arrived.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="core"&gt;&lt;a class="anchor" href="#core"&gt;&lt;/a&gt;Core&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="a-href-https-github-com-spring-projects-spring-security-issues-6494-gh-6494-a-converting-key-material-into-code-key-code-instances"&gt;&lt;a class="anchor" href="#a-href-https-github-com-spring-projects-spring-security-issues-6494-gh-6494-a-converting-key-material-into-code-key-code-instances"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/6494"&gt;gh-6494&lt;/a&gt; - Converting key material into &lt;code&gt;Key&lt;/code&gt; instances&lt;/h5&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Spring Security 5.2 simplifies converting X.509 and PKCS#8 key material into &lt;code&gt;RSAPublicKey&lt;/code&gt; and &lt;code&gt;RSAPrivateKey&lt;/code&gt; instances by registering &lt;code&gt;Converter&lt;/code&gt; s to the &lt;code&gt;ConversionService&lt;/code&gt; and &lt;code&gt;PropertyEditor&lt;/code&gt; s to the &lt;code&gt;PropertyEditorRegistry&lt;/code&gt;. You can see an example in the &lt;a href="https://github.com/spring-projects/spring-security/blob/master/samples/boot/oauth2resourceserver-static/src/main/java/sample/OAuth2ResourceServerSecurityConfiguration.java#L34"&gt;Resource Server static key sample&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="a-href-https-github-com-spring-projects-spring-security-issues-6774-gh-6774-a-support-for-jdk-12"&gt;&lt;a class="anchor" href="#a-href-https-github-com-spring-projects-spring-security-issues-6774-gh-6774-a-support-for-jdk-12"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/6774"&gt;gh-6774&lt;/a&gt; - Support for JDK 12&lt;/h5&gt;
-
-&lt;/div&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="a-href-https-github-com-spring-projects-spring-security-issues-6722-gh-6722-a-introducing-code-authenticationmanagerresolver-code"&gt;&lt;a class="anchor" href="#a-href-https-github-com-spring-projects-spring-security-issues-6722-gh-6722-a-introducing-code-authenticationmanagerresolver-code"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/6722"&gt;gh-6722&lt;/a&gt; - Introducing &lt;code&gt;AuthenticationManagerResolver&lt;/code&gt;&lt;/h5&gt;
-
-&lt;/div&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="a-href-https-github-com-spring-projects-spring-security-issues-6546-gh-6546-a-introducing-code-currentsecuritycontext-code-for-method-arguments"&gt;&lt;a class="anchor" href="#a-href-https-github-com-spring-projects-spring-security-issues-6546-gh-6546-a-introducing-code-currentsecuritycontext-code-for-method-arguments"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/6546"&gt;gh-6546&lt;/a&gt; - Introducing &lt;code&gt;@CurrentSecurityContext&lt;/code&gt; for method arguments&lt;/h5&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Like &lt;code&gt;@AuthenticationPrincipal&lt;/code&gt; before it, &lt;code&gt;@CurrentSecurityContext&lt;/code&gt; works with an argument resolver to retrieve aspects of the &lt;code&gt;SecurityContext&lt;/code&gt;:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;public String hello(@CurrentSecurityContext
-        SecurityContext context) {
-    return Optional.ofNullable(context.getAuthentication())
-            .map(Authentication::getName).orElse("world");
-}
-
-// or
-
-public String hello(@CurrentSecurityContext
-        (expression="authentication.name") String name) {
-    return Optional.ofNullable(name).orElse("world");
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="web"&gt;&lt;a class="anchor" href="#web"&gt;&lt;/a&gt;Web&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="a-href-https-github-com-spring-projects-spring-security-issues-4187-gh-4187-a-support-for-the-clear-site-data-header"&gt;&lt;a class="anchor" href="#a-href-https-github-com-spring-projects-spring-security-issues-4187-gh-4187-a-support-for-the-clear-site-data-header"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/4187"&gt;gh-4187&lt;/a&gt; - Support for the Clear-Site-Data header&lt;/h5&gt;
-
-&lt;/div&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="a-href-https-github-com-spring-projects-spring-security-issues-6312-gh-6312-a-support-for-hsts-preload"&gt;&lt;a class="anchor" href="#a-href-https-github-com-spring-projects-spring-security-issues-6312-gh-6312-a-support-for-hsts-preload"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/6312"&gt;gh-6312&lt;/a&gt; - Support for HSTS preload&lt;/h5&gt;
-
-&lt;/div&gt;
-&lt;div class="sect4"&gt;
-&lt;h5 id="a-href-https-github-com-spring-projects-spring-security-issues-6453-gh-6453-a-introducing-code-compositeheaderwriter-code-as-well-as-some-other-a-href-https-github-com-spring-projects-spring-security-issues-6454-header-writing-cleanup-a"&gt;&lt;a class="anchor" href="#a-href-https-github-com-spring-projects-spring-security-issues-6453-gh-6453-a-introducing-code-compositeheaderwriter-code-as-well-as-some-other-a-href-https-github-com-spring-projects-spring-security-issues-6454-header-writing-cleanup-a"&gt;&lt;/a&gt;&lt;a href="https://github.com/spring-projects/spring-security/issues/6453"&gt;gh-6453&lt;/a&gt; - Introducing &lt;code&gt;CompositeHeaderWriter&lt;/code&gt;, as well as some other &lt;a href="https://github.com/spring-projects/spring-security/issues/6454"&gt;header-writing cleanup&lt;/a&gt;.&lt;/h5&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="http://projects.spring.io/spring-security/"&gt;Project Site&lt;/a&gt; |
-&lt;a href="https://docs.spring.io/spring-security/site/docs/5.2.0.M2/reference/htmlsingle/"&gt;Reference&lt;/a&gt;
-| &lt;a href="http://stackoverflow.com/questions/tagged/spring-security"&gt;Help&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</content>
   </entry>
 </feed>
