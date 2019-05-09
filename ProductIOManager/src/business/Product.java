@@ -14,7 +14,7 @@ public class Product {
 
 	// we wrote this one in class
 	public Product(String inCode, String inDesc, double inPrice) {
-		System.out.println("Product constructor w/ 3 parms called");
+		
 		code = inCode;
 		description = inDesc;
 		price = inPrice;

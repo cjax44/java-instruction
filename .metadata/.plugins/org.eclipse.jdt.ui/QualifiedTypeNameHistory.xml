@@ -35,8 +35,6 @@
 <fullyQualifiedTypeName name="util.Country"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="db.DAO"/>
-<fullyQualifiedTypeName name="business.Product"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="db.ProductTextFile"/>
 <fullyQualifiedTypeName name="util.Console"/>
 <fullyQualifiedTypeName name="java.util.List"/>
@@ -44,4 +42,8 @@
 <fullyQualifiedTypeName name="java.nio.file.Paths"/>
 <fullyQualifiedTypeName name="java.nio.file.Files"/>
 <fullyQualifiedTypeName name="java.nio.file.Path"/>
+<fullyQualifiedTypeName name="business.Product"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="db.ProductDB"/>
+<fullyQualifiedTypeName name="db.StuffyDB"/>
 </qualifiedTypeNameHistroy>

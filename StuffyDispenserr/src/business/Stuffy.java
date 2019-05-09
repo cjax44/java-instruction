@@ -11,6 +11,15 @@ public class Stuffy {
 	public Stuffy() {
 		super();
 	}
+	
+	public Stuffy(String type, String color, String size, int limbs) {
+		super();
+		this.type = type;
+		this.color = color;
+		this.size = size;
+		this.limbs = limbs;
+	}
+
 
 	public Stuffy(int id, String type, String color, String size, int limbs) {
 		super();

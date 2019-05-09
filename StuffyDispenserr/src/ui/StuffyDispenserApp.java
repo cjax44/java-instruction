@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import business.Stuffy;
+import db.StuffyDB;
 import util.Console;
 
 public class StuffyDispenserApp {
@@ -15,25 +16,32 @@ public class StuffyDispenserApp {
 				+ "The user will be able to select a stuffy, and hopefully the app will return one!");
 
 		// initialize a list of stuffies
-
-		List<Stuffy> stuffies = new ArrayList<>();
-
-		stuffies.add(new Stuffy(1, "Dog", "Blue", "Large", 4));
-		stuffies.add(new Stuffy(2, "Cat", "Green", "Small", 4));
-		stuffies.add(new Stuffy(3, "Dragon", "Purple", "Medium", 6));
-		stuffies.add(new Stuffy(4, "Snail", "Yellow", "X-Large", 1));
-		stuffies.add(new Stuffy(5, "Platypus", "Blue", "Medium", 4));
-		stuffies.add(new Stuffy(6, "Octopus", "Purple", "Large", 8));
-		stuffies.add(new Stuffy(7, "Squirrel", "Brown", "Small", 4));
-		stuffies.add(new Stuffy(8, "Starfish", "Pink", "X-Large", 5));
-		stuffies.add(new Stuffy(9, "Lobster", "Red", "Large", 10));
-		stuffies.add(new Stuffy(10, "Spider", "Clear", "Small", 8));
-
-		for (Stuffy s : stuffies) {
-
-			System.out.println(s);
-
-		}
+		
+//		List<Stuffy> stuffies = new ArrayList<>();
+		StuffyDB stuffyInfo = new StuffyDB();
+		stuffyInfo.getAll();
+		
+		
+		
+// 2nd iteration using List
+//		List<Stuffy> stuffies = new ArrayList<>();
+//
+//		stuffies.add(new Stuffy(1, "Dog", "Blue", "Large", 4));
+//		stuffies.add(new Stuffy(2, "Cat", "Green", "Small", 4));
+//		stuffies.add(new Stuffy(3, "Dragon", "Purple", "Medium", 6));
+//		stuffies.add(new Stuffy(4, "Snail", "Yellow", "X-Large", 1));
+//		stuffies.add(new Stuffy(5, "Platypus", "Blue", "Medium", 4));
+//		stuffies.add(new Stuffy(6, "Octopus", "Purple", "Large", 8));
+//		stuffies.add(new Stuffy(7, "Squirrel", "Brown", "Small", 4));
+//		stuffies.add(new Stuffy(8, "Starfish", "Pink", "X-Large", 5));
+//		stuffies.add(new Stuffy(9, "Lobster", "Red", "Large", 10));
+//		stuffies.add(new Stuffy(10, "Spider", "Clear", "Small", 8));
+//
+//		for (Stuffy s : stuffies) {
+//
+//			System.out.println(s);
+//
+//		}
 
 // 1st iteration using Arrays		
 // 		Stuffy[] stuffies = new Stuffy[10];
@@ -68,16 +76,17 @@ public class StuffyDispenserApp {
 //				selectionNbr--;
 				// 2) Do business logic (retrieve stuffy from list)
 
-				Stuffy selectedStuffy = null;
+				Stuffy selectedStuffy = stuffyInfo.get(selectionNbr);
 				
-				for (Stuffy s: stuffies) {
-					//compare id to selectionNbr
-					if (s.getId() == selectionNbr) {
-						selectedStuffy = s;
-					}
-					
-					
-				}
+				
+//				for (Stuffy s: stuffies) {
+//					//compare id to selectionNbr
+//					if (s.getId() == selectionNbr) {
+//						selectedStuffy = s;
+//					}
+//					
+//					
+//				}
 
 				// 3) Display the selected stuffy
 
@@ -86,14 +95,14 @@ public class StuffyDispenserApp {
 
 			} else if (choice.equalsIgnoreCase("a")) {
 				//add a stuffy
-				int id = Console.getInt("Stuffy ID:   ");
+//				int id = Console.getInt("Stuffy ID:   ");
 				String t = Console.getRequiredString("Stuffy Type:   ");
 				String c = Console.getRequiredString("Stuffy Color:   ");
 				String s = Console.getRequiredString("Stuffy Size:   ");
 				int l = Console.getInt("Stuffy # of limbs:   ");
 				
-				Stuffy stuffy = new Stuffy(id, t, c, s, l);
-				stuffies.add(stuffy);
+				Stuffy stuffy = new Stuffy(t, c, s, l);
+				stuffyInfo.add(stuffy);
 				
 			}
 
