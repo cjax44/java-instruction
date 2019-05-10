@@ -103,8 +103,8 @@ public class StuffyDB implements DAO<Stuffy> {
 
 	@Override
 	public boolean delete(Stuffy t) {
-		String sql = "delete from product " +
-					"WHERE code = ?";
+		String sql = "DELETE from Stuffy " +
+					"WHERE ID = ?";
 				try(Connection con = getConnection(); PreparedStatement ps = con.prepareStatement(sql)) {
 					ps.setInt(1,  t.getId());
 					ps.executeUpdate();

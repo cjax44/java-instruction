@@ -36,7 +36,7 @@ public class NameGameAppV2 {
 			while (continueChoice.equalsIgnoreCase("y") && menuChoice.equalsIgnoreCase("s")) {
 				for (currentPlayer = 1; currentPlayer < numPlayers; currentPlayer++) {
 					int score = 0;
-					String nameEntry2 = Console.getRequiredString("Next player please enter a first and last name: ");
+					String nameEntry2 = Console.getRequiredString("Player " + (currentPlayer + 1) + " please enter a first and last name: ");
 					System.out.println("\nThe name chosen was " + nameEntry2 + "\n");
 					// break strings out to compare to each other
 					String[] brokenOut1 = nameEntry1.split(" ");

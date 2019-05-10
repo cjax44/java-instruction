@@ -2,12 +2,15 @@ package ui;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import business.Stuffy;
+import db.DAO;
 import db.StuffyDB;
 import util.Console;
+import util.StringUtils;
 
 public class StuffyDispenserApp {
+	
+	private static DAO<Stuffy> stuffyDAO = new StuffyDB();
 
 	public static void main(String[] args) {
 
@@ -18,11 +21,119 @@ public class StuffyDispenserApp {
 		// initialize a list of stuffies
 		
 //		List<Stuffy> stuffies = new ArrayList<>();
+		
 		StuffyDB stuffyInfo = new StuffyDB();
 		stuffyInfo.getAll();
 		
 		
+
+		// Loop until user wants to quit
+		String choice = "";
+		while (!choice.equalsIgnoreCase("x")) {
+
+			// Inside Loop
+			choice = Console.getRequiredString(getMenuOptions());
+
+			if (choice.equalsIgnoreCase("s")) {
+
+				// 1) Prompt for user input ("Pick a stuffy")
+				int selectionNbr = Console.getIntWithinRange("Pick a stuffy by number: ", 0, 457);
+
+//				selectionNbr--;
+				// 2) Do business logic (retrieve stuffy from list)
+
+				Stuffy selectedStuffy = stuffyInfo.get(selectionNbr);
+				
+				
+
+				// 3) Display the selected stuffy
+
+				System.out.println("Congratulations, you have a " + selectedStuffy.getSize() + ", "
+						+ selectedStuffy.getColor() + " " + selectedStuffy.getType() + " stuffy!!!");
+
+			} else if (choice.equalsIgnoreCase("a")) {
+				//add a stuffy
+//				int id = Console.getInt("Stuffy ID:   ");
+				String t = Console.getRequiredString("Stuffy Type:   ");
+				String c = Console.getRequiredString("Stuffy Color:   ");
+				String s = Console.getRequiredString("Stuffy Size:   ");
+				int l = Console.getInt("Stuffy # of limbs:   ");
+				
+				Stuffy stuffy = new Stuffy(t, c, s, l);
+				stuffyInfo.add(stuffy);
+				
+			} else if (choice.equalsIgnoreCase("L")) {
+				displayAllStuffies();
+			} else if (choice.equalsIgnoreCase("D")) {
+				// OLD WAY
+//				System.out.println("WARNING - DELETING STUFFIES\n");
+//				int id = Console.getInt("Enter ID of stuffy to delete:  ");
+//				Stuffy stuffy = stuffyDAO.get(id);
+//				stuffyInfo.delete(stuffy);
+//				System.out.println("Successfully deleted stuffy\n");
+				delStuffy();
+				
+			}
+
+		}
+
+		System.out.println("Goodbye!");
+
+	}
+
+	private static String getMenuOptions() {
+
+		String s = "Menu Options\n" + "L - List all stuffies\n"+ "S - Search for a Stuffy\n" + "A - Add a Stuffy\n" + "D - Delete a Stuffy\n" + "X - Exit\n";
+
+		return s;
+
+	}
+	
+	private static void displayAllStuffies() {
+		System.out.println("PRODUCT LIST:");
+		System.out.println("=====================");
+		List<Stuffy> stuffies = stuffyDAO.getAll();
+		StringBuilder sb = new StringBuilder();
+		for (Stuffy p: stuffies) {
+			sb.append(p.getId() + "\t");
+			sb.append(StringUtils.padWithSpaces(p.getType(), 15));
+			sb.append(StringUtils.padWithSpaces(p.getSize(), 15));
+			sb.append(StringUtils.padWithSpaces(p.getColor(), 15));
+			sb.append(p.getLimbs());
+			sb.append("\n");
+		}
+		System.out.println(sb.toString());
+	}
+	
+	private static void delStuffy() {
+		System.out.println("WARNING: DELETING STUFFY!!!!");
+		int id = Console.getInt("Enter stuffy ID to delete:  ");
+		// get a product based on code
+		Stuffy p = stuffyDAO.get(id);
+		if (p == null) {
+			System.out.println("Invalid code.");
+		}
+		else {
+			if (stuffyDAO.delete(p)) {
+				System.out.println("Delete success");
+			} else {
+				System.out.println("Error deleting product.");
+			}
+		}
 		
+	}
+
+}
+//				for (Stuffy s: stuffies) {
+//					//compare id to selectionNbr
+//					if (s.getId() == selectionNbr) {
+//						selectedStuffy = s;
+//					}
+//					
+//					
+//				}
+
+
 // 2nd iteration using List
 //		List<Stuffy> stuffies = new ArrayList<>();
 //
@@ -60,64 +171,3 @@ public class StuffyDispenserApp {
 //			System.out.println("Stuffy " + i + ": " + stuffies[i].toString());
 //		}
 //		
-
-		// Loop until user wants to quit
-		String choice = "";
-		while (!choice.equalsIgnoreCase("x")) {
-
-			// Inside Loop
-			choice = Console.getRequiredString(getMenuOptions());
-
-			if (choice.equalsIgnoreCase("s")) {
-
-				// 1) Prompt for user input ("Pick a stuffy")
-				int selectionNbr = Console.getIntWithinRange("Pick a stuffy by number: ", 0, 457);
-
-//				selectionNbr--;
-				// 2) Do business logic (retrieve stuffy from list)
-
-				Stuffy selectedStuffy = stuffyInfo.get(selectionNbr);
-				
-				
-//				for (Stuffy s: stuffies) {
-//					//compare id to selectionNbr
-//					if (s.getId() == selectionNbr) {
-//						selectedStuffy = s;
-//					}
-//					
-//					
-//				}
-
-				// 3) Display the selected stuffy
-
-				System.out.println("Congratulations, you have a " + selectedStuffy.getSize() + ", "
-						+ selectedStuffy.getColor() + " " + selectedStuffy.getType() + " stuffy!!!");
-
-			} else if (choice.equalsIgnoreCase("a")) {
-				//add a stuffy
-//				int id = Console.getInt("Stuffy ID:   ");
-				String t = Console.getRequiredString("Stuffy Type:   ");
-				String c = Console.getRequiredString("Stuffy Color:   ");
-				String s = Console.getRequiredString("Stuffy Size:   ");
-				int l = Console.getInt("Stuffy # of limbs:   ");
-				
-				Stuffy stuffy = new Stuffy(t, c, s, l);
-				stuffyInfo.add(stuffy);
-				
-			}
-
-		}
-
-		System.out.println("Goodbye!");
-
-	}
-
-	private static String getMenuOptions() {
-
-		String s = "Menu Options\n" + "S - Search for a Stuffy\n" + "A - Add a Stuffy\n" + "X - Exit\n";
-
-		return s;
-
-	}
-
-}
