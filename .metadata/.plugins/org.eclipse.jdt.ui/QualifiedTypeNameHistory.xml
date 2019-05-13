@@ -37,13 +37,19 @@
 <fullyQualifiedTypeName name="db.DAO"/>
 <fullyQualifiedTypeName name="db.ProductTextFile"/>
 <fullyQualifiedTypeName name="util.Console"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="util.StringUtils"/>
 <fullyQualifiedTypeName name="java.nio.file.Paths"/>
 <fullyQualifiedTypeName name="java.nio.file.Files"/>
 <fullyQualifiedTypeName name="java.nio.file.Path"/>
-<fullyQualifiedTypeName name="business.Product"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="db.ProductDB"/>
 <fullyQualifiedTypeName name="db.StuffyDB"/>
+<fullyQualifiedTypeName name="business.Vendor"/>
+<fullyQualifiedTypeName name="business.User"/>
+<fullyQualifiedTypeName name="business.Product"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+<fullyQualifiedTypeName name="com.prs.db.UserDB"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.prs.business.User"/>
 </qualifiedTypeNameHistroy>

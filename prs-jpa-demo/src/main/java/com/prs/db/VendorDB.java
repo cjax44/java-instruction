@@ -1,38 +1,36 @@
 package com.prs.db;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.*;
 
-import com.prs.business.User;
+import com.prs.business.*;
 
-public class UserDB {
+
+
+public class VendorDB {
 	
-	public static List<User> getAll() {
+public static List<Vendor> getAll() {
 		
-		List<User> users = null;
+		List<Vendor> vendors = null;
 		
 		EntityManager em = DBUtil.getEmFactory().createEntityManager();
 		
 		try {
-			Query q = em.createQuery("Select u from User u");
-			users = q.getResultList();
+			Query q = em.createQuery("Select u from Vendor u");
+			vendors = q.getResultList();
 		} finally {
 			em.close();
 		}
 		
-		return users;
+		return vendors;
 	}
 	
-	public static void update(User user) {
+	public static void update(Vendor v) {
 		EntityManager em = DBUtil.getEmFactory().createEntityManager();
 		EntityTransaction trans = em.getTransaction();
 		trans.begin();
 		try {
-			em.merge(user);
+			em.merge(v);
 			trans.commit();
 		} catch (Exception e) {
 			System.out.println(e);
@@ -42,12 +40,12 @@ public class UserDB {
 		}
 	}
 	
-	public static void delete(User user) {
+	public static void delete(Vendor v) {
 		EntityManager em = DBUtil.getEmFactory().createEntityManager();
 		EntityTransaction trans = em.getTransaction();
 		trans.begin();
 		try {			
-			em.remove(em.merge(user));
+			em.remove(em.merge(v));
 			trans.commit();
 		} catch (Exception e) {
 			System.out.println(e);
@@ -57,15 +55,15 @@ public class UserDB {
 		}
 	}
 	
-	public static User selectUser(String email) {
+	public static Vendor selectVendor(int vendorID) {
 		EntityManager em = DBUtil.getEmFactory().createEntityManager();
-		String qString = "SELECT u FROM User u " +
-							"WHERE u.email = :email";
-		TypedQuery<User> q = em.createQuery(qString, User.class);
-		q.setParameter("email", email);
+		String qString = "SELECT u FROM Vendor u " +
+							"WHERE u.vendorID = :vendorID";
+		TypedQuery<Vendor> q = em.createQuery(qString, Vendor.class);
+		q.setParameter("vendorID", vendorID);
 		try {
-			User user = q.getSingleResult();
-			return user;
+			Vendor v = q.getSingleResult();
+			return v;
 		} catch (NoResultException e) {
 			return null;
 		} finally {
@@ -73,18 +71,13 @@ public class UserDB {
 		}
 	}
 	
-	public static boolean emailExists(String email) {
-		User u = selectUser(email);
-		return u != null;
 	
-	}
-	
-	public static void insert(User user) {
+	public static void insert(Vendor v) {
 		EntityManager em = DBUtil.getEmFactory().createEntityManager();
 		EntityTransaction trans = em.getTransaction();
 		trans.begin();
 		try {
-			em.persist(user);
+			em.persist(v);
 			trans.commit();
 		} catch (Exception e) {
 			System.out.println(e);
@@ -94,5 +87,5 @@ public class UserDB {
 		}
 			
 		}
-	}
-		
+	
+}
