@@ -10,7 +10,9 @@ public class PurchaseRequest {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
-	private int userID;
+	@ManyToOne(fetch=FetchType.EAGER)
+	@JoinColumn(name = "userID")
+	private User user;
 	private String password;
 	private String description;
 	private String justification;
@@ -28,12 +30,12 @@ public class PurchaseRequest {
 		
 	}
 
-	public PurchaseRequest(int id, int userID, String password, String description, String justification,
+	public PurchaseRequest(int id, User user, String password, String description, String justification,
 			Date dateNeeded, String deliveryMode, String status, double total, Date submittedDate,
 			String reasonForRejection) {
 		super();
 		this.id = id;
-		this.userID = userID;
+		this.user = user;
 		this.password = password;
 		this.description = description;
 		this.justification = justification;
@@ -53,12 +55,12 @@ public class PurchaseRequest {
 		this.id = id;
 	}
 
-	public int getUserID() {
-		return userID;
+	public User getUser() {
+		return user;
 	}
 
-	public void setUserID(int userID) {
-		this.userID = userID;
+	public void setUserID(User userID) {
+		this.user = userID;
 	}
 
 	public String getPassword() {

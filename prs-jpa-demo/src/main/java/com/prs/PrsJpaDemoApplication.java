@@ -88,14 +88,10 @@ public class PrsJpaDemoApplication {
 		private static String getMenuOptions() {
 
 			String s = "\nMenu Options\n============"
-					+ "\nType + in front of your selection to add\n"
-					+ "\nType - in front of your selection to subtract\n\n"
+					+ "\nType + or - in front of your selection to add or subtract\n"
 					+ "V - List all vendors\n"
-//					+ "+V - Add a vendor\n"
 					+ "U - List all Users\n"
-//					+ "+U - Add a user\n"
 					+ "P - List all products\n"
-//					+ "+P - Add a product\n"
 					+ "X - Exit\n";
 
 			return s;
