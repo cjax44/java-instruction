@@ -14,7 +14,10 @@ public class BookManagerApp {
         bookList.stream().filter(b -> b.getFormat().equals(Book.PAPERBACK)).forEach(System.out::println);
         
         System.out.println("\nDATABASE BOOK TITLES:");
-        bookList.stream().filter(b -> b.getCategory().equals(Book.DATABASE)).map(b -> b.getTitle() + " (" +  b.getFormat() + ") ").collect(Collectors.toList()).forEach(System.out::println);
+        bookList.stream().filter(b -> b.getCategory().equals(Book.DATABASE))
+        				.map(b -> b.getTitle() + " (" +  b.getFormat() + ") ")
+        				.collect(Collectors.toList())
+        				.forEach(System.out::println);
 //        OLD WAY
 //        List<Book> booksByTitle = manager.getBooks(
 //                b -> b.getTitle().equals("Java Programming"));

@@ -75,6 +75,10 @@ public class PrsJpaDemoApplication {
 					
 				} else if (choice.equalsIgnoreCase("-P")) {
 					delProd();
+				} else if (choice.equalsIgnoreCase("PR")) {
+					displayPurchaseRequests();
+				} else if (choice.equalsIgnoreCase("PRLI")) {
+					displayPRLI();
 				}
 				
 				
@@ -128,6 +132,41 @@ public class PrsJpaDemoApplication {
 				sb.append(StringUtils.padWithSpaces(p.getEmail(), 15));
 				sb.append(p.isReviewer());
 				sb.append(p.isReviewer());
+				sb.append("\n");
+			}
+			System.out.println(sb.toString());
+		}
+		
+		private static void displayPurchaseRequests() {
+			System.out.println("PURCHASE REQUEST LIST:");
+			System.out.println("=====================");
+			List<PurchaseRequest> purchaseRequests = PRDB.getAll();
+			StringBuilder sb = new StringBuilder();
+			for (PurchaseRequest p: purchaseRequests) {
+				sb.append(p.getId() + "\t");
+				sb.append(p.getUser() + "\t");
+				sb.append(StringUtils.padWithSpaces(p.getDescription(), 55));
+				sb.append(StringUtils.padWithSpaces(p.getJustification(), 55));
+				sb.append(p.getDateNeeded() + "\t");
+				sb.append(p.getDeliveryMode() + "\t");
+				sb.append(StringUtils.padWithSpaces(p.getStatus(), 55));
+				sb.append(p.getTotal() + "\t");
+				sb.append(p.getSubmittedDate());
+				sb.append("\n");
+			}
+			System.out.println(sb.toString());
+		}
+		
+		private static void displayPRLI() {
+			System.out.println("PRLI LIST:");
+			System.out.println("=====================");
+			List<PurchaseRequestLineItem> pRLI = PRLIDB.getAll();
+			StringBuilder sb = new StringBuilder();
+			for (PurchaseRequestLineItem p: pRLI) {
+				sb.append(p.getId() + "\t");
+				sb.append(p.getPurchaseRequest() + "\t");
+				sb.append(p.getProduct() + "\t");
+				sb.append(p.getQuantity());
 				sb.append("\n");
 			}
 			System.out.println(sb.toString());
