@@ -1,5 +1,6 @@
 package com.prs;
 
+import java.sql.Date;
 import java.util.List;
 
 import org.springframework.boot.SpringApplication;
@@ -17,6 +18,8 @@ public class PrsJpaDemoApplication {
 
 			System.out.println("Welcome to the prs-jpa-demo App");
 			
+			
+			
 			String choice = "";
 			while (!choice.equalsIgnoreCase("x")) {
 
@@ -24,7 +27,7 @@ public class PrsJpaDemoApplication {
 				choice = Console.getRequiredString(getMenuOptions());
 				
 				if (choice.equalsIgnoreCase("V")) {
-//					displayAllVendors();
+					displayAllVendors();
 				} else if (choice.equalsIgnoreCase("U")) {
 					displayAllUsers();
 				} else if (choice.equalsIgnoreCase("P")) {
@@ -79,6 +82,18 @@ public class PrsJpaDemoApplication {
 					displayPurchaseRequests();
 				} else if (choice.equalsIgnoreCase("PRLI")) {
 					displayPRLI();
+				} else if (choice.equalsIgnoreCase("+PR")) {
+					
+//					int userId = Console.getInt("User ID:   ");
+//					String desc = Console.getRequiredString("Enter description:   ");
+//					String just = Console.getRequiredString("Enter justification:   ");
+//					Date dateNeeded = Console.getRequiredString("Name:   ");
+//					double price = Console.getDouble("Price:   ");
+//					String photoPath = Console.getRequiredString("PhotoPath:   ");
+//				
+//					
+//					Product p = new Product(vendor, partNumber, name, price, photoPath);
+//					ProductDB.insert(p);
 				}
 				
 				
@@ -91,11 +106,13 @@ public class PrsJpaDemoApplication {
 			
 		private static String getMenuOptions() {
 
-			String s = "\nMenu Options\n============"
+			String s = "\nMenu Options\n============\n"
 					+ "\nType + or - in front of your selection to add or subtract\n"
-					+ "V - List all vendors\n"
+					+ "V - List all Vendors\n"
 					+ "U - List all Users\n"
-					+ "P - List all products\n"
+					+ "P - List all Products\n"
+					+ "PR - List all Purchase Requests\n"
+					+ "PRLI - List all Purchase Request Line Items\n"
 					+ "X - Exit\n";
 
 			return s;
@@ -113,6 +130,26 @@ public class PrsJpaDemoApplication {
 				sb.append(StringUtils.padWithSpaces(p.getPartNumber(), 15));
 				sb.append(StringUtils.padWithSpaces(p.getName(), 55));
 				sb.append(p.getPrice());
+				sb.append("\n");
+			}
+			System.out.println(sb.toString());
+		}
+		
+		private static void displayAllVendors() {
+			System.out.println("Vendor LIST:");
+			System.out.println("=====================");
+			List<Vendor> vendors = VendorDB.getAll();
+			StringBuilder sb = new StringBuilder();
+			for (Vendor v: vendors) {
+				sb.append(v.getId() + "\t");
+				sb.append(v.getCode() + "\t");
+				sb.append(StringUtils.padWithSpaces(v.getName(), 15));
+				sb.append(StringUtils.padWithSpaces(v.getAddress(), 35));
+				sb.append(StringUtils.padWithSpaces(v.getCity(), 15));
+				sb.append(StringUtils.padWithSpaces(v.getState(), 15));
+				sb.append(v.getZip() + "\t");
+				sb.append(v.getPhoneNumber() + "\t");
+				sb.append(StringUtils.padWithSpaces(v.getEmail(), 55));
 				sb.append("\n");
 			}
 			System.out.println(sb.toString());
@@ -144,9 +181,9 @@ public class PrsJpaDemoApplication {
 			StringBuilder sb = new StringBuilder();
 			for (PurchaseRequest p: purchaseRequests) {
 				sb.append(p.getId() + "\t");
-				sb.append(p.getUser() + "\t");
-				sb.append(StringUtils.padWithSpaces(p.getDescription(), 55));
-				sb.append(StringUtils.padWithSpaces(p.getJustification(), 55));
+				sb.append(p.getUser().getUserName() + "\t");
+				sb.append(StringUtils.padWithSpaces(p.getDescription(), 25));
+				sb.append(StringUtils.padWithSpaces(p.getJustification(), 45));
 				sb.append(p.getDateNeeded() + "\t");
 				sb.append(p.getDeliveryMode() + "\t");
 				sb.append(StringUtils.padWithSpaces(p.getStatus(), 55));
@@ -164,9 +201,9 @@ public class PrsJpaDemoApplication {
 			StringBuilder sb = new StringBuilder();
 			for (PurchaseRequestLineItem p: pRLI) {
 				sb.append(p.getId() + "\t");
-				sb.append(p.getPurchaseRequest() + "\t");
-				sb.append(p.getProduct() + "\t");
-				sb.append(p.getQuantity());
+				sb.append(p.getPurchaseRequest().getDescription() + "\t");
+				sb.append(p.getProduct().getName() + "\t");
+				sb.append("QTY: " + p.getQuantity());
 				sb.append("\n");
 			}
 			System.out.println(sb.toString());

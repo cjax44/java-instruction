@@ -20,7 +20,7 @@ public class PRLIDB {
 		EntityManager em = DBUtil.getEmFactory().createEntityManager();
 
 		try {
-			Query q = em.createQuery("Select u from PurchaseRequest u");
+			Query q = em.createQuery("Select u from PurchaseRequestLineItem u");
 			pr = q.getResultList();
 		} finally {
 			em.close();

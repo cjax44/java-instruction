@@ -1,6 +1,6 @@
 package com.prs.db;
 
-import java.util.*;
+import java.util.List;
 import javax.persistence.*;
 import com.prs.business.*;
 

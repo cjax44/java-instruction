@@ -13,7 +13,6 @@ public class PurchaseRequest {
 	@ManyToOne(fetch=FetchType.EAGER)
 	@JoinColumn(name = "userID")
 	private User user;
-	private String password;
 	private String description;
 	private String justification;
 	private Date dateNeeded;
@@ -30,13 +29,12 @@ public class PurchaseRequest {
 		
 	}
 
-	public PurchaseRequest(int id, User user, String password, String description, String justification,
+	public PurchaseRequest(int id, User user, String description, String justification,
 			Date dateNeeded, String deliveryMode, String status, double total, Date submittedDate,
 			String reasonForRejection) {
 		super();
 		this.id = id;
 		this.user = user;
-		this.password = password;
 		this.description = description;
 		this.justification = justification;
 		this.dateNeeded = dateNeeded;
@@ -61,14 +59,6 @@ public class PurchaseRequest {
 
 	public void setUserID(User userID) {
 		this.user = userID;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
 	}
 
 	public String getDescription() {
