@@ -8,9 +8,11 @@ public class LineItem {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	@OneToMany
+	@ManyToOne(fetch=FetchType.EAGER)
+	@JoinColumn(name = "invoiceID")
 	private Invoice invoice;
-	@OneToMany
+	@ManyToOne(fetch=FetchType.EAGER)
+	@JoinColumn(name = "productID")
 	private Product product;
 	private int quantity;
 	

@@ -98,5 +98,22 @@ public class ProductController {
 		return jr;
 
 	}
+	
+	@GetMapping("")
+	public JsonResponse getByCode(@RequestParam String code) {
+		JsonResponse jr = null;
+		try {
+			Optional<Product> p = productRepository.findByCode(code);
+			if (p.isPresent())
+				jr = JsonResponse.getInstance(p);
+			else
+				jr = JsonResponse.getInstance("No product found for id: " + code);
+
+		} catch (Exception e) {
+			jr = JsonResponse.getInstance(e);
+		}
+		return jr;
+
+	}
 
 }

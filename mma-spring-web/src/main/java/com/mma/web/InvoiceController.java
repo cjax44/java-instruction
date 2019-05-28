@@ -24,7 +24,8 @@ public class InvoiceController {
 	
 	@Autowired
 	private InvoiceRepository invoiceRepo;
-
+	
+	@GetMapping("/")
 	public JsonResponse getAll() {
 		JsonResponse jr = null;
 		try {
